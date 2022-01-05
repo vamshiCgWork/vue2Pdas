@@ -19,6 +19,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
+  {
+    path: '/pdas',
+    name: "PDAS",
+    component: () =>
+      import('../../uicomponents/src/components/PDAS.vue')
+  }
 ];
 
 const router = new VueRouter({
